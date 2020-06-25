@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/txtLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/live"
+        style="@style/Body"
+        android:background="@drawable/bg_live"
+        android:textColor="@color/blueDark"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@id/imgFirstTeam"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMinuets"
+        android:layout_width="wrap_content"
+        android:textColor="@color/green"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        style="@style/Body"
+        app:layout_constraintBottom_toTopOf="@id/imgFirstTeam"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="txtMinuets" />
+
+    <ImageView
+        android:id="@+id/imgFirstTeam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtFirstTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        style="@style/Body"
+        app:layout_constraintEnd_toEndOf="@id/imgFirstTeam"
+        app:layout_constraintStart_toStartOf="@id/imgFirstTeam"
+        app:layout_constraintTop_toBottomOf="@id/imgFirstTeam"
+        tools:text="txtFirstTeam" />
+
+
+    <ImageView
+        android:id="@+id/imgSecondTeam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtSecondTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        style="@style/Body"
+        app:layout_constraintEnd_toEndOf="@id/imgSecondTeam"
+        app:layout_constraintStart_toStartOf="@id/imgSecondTeam"
+        app:layout_constraintTop_toBottomOf="@id/imgSecondTeam"
+        tools:text="txtSecondTeam" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgSecondTeam"
+        app:layout_constraintStart_toEndOf="@id/imgFirstTeam"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="txtResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ViraCallenge</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="yesterday">دیروز</string>
+    <string name="today">امروز</string>
+    <string name="tomarrow">فردا</string>
+    <string name="canceled">کنسل شده</string>
+    <string name="live">زنده</string>
+    <string name="error">مشکلی در ارتباط با سرور پیش آمد</string>
+    <string name="liveGames">بازی های زنده</string>
+    <string name="games">بازی ها</string>
+    <string name="videoUpload">آپلود ویدیو</string>
+    <string name="selectVideo">انتخاب ویدیو</string>
+    <string name="videoUploadSuccess">ویدیو با موفقیت بارگذاری شد</string>
+    <string name="fromGallery">از گالری</string>
+    <string name="fromCamera">از دوربین</string>
+</resources>
