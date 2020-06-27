@@ -1,4 +1,4 @@
-package com.faraji.challenge.vira.app
+package com.faraji.challenge.vira.data.remote
 
 import kotlinx.coroutines.Deferred
 import okhttp3.MultipartBody
@@ -9,7 +9,7 @@ import retrofit2.http.Part
 interface ApiService {
     @Multipart
     @PUT("/uploadVideo")
-    fun uploadAvatar(
+    fun uploadVideo(
         @Part file: MultipartBody.Part
     ): Deferred<Boolean>
 

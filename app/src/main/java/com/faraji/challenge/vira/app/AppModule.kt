@@ -1,23 +1,16 @@
 package com.faraji.challenge.vira.app
 
 import android.content.Context
+import com.faraji.challenge.vira.data.remote.ApiService
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
 import okhttp3.OkHttpClient
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.IOException
-import java.net.UnknownHostException
-import java.security.SecureRandom
-import java.security.cert.CertificateException
-import java.security.cert.X509Certificate
 import java.util.concurrent.TimeUnit
-import javax.net.ssl.*
 
 
 fun getApplicationModule(context: Context) =  module {
